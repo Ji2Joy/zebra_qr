@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@color/grayforbackground"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/grayforbackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Network Status"
+            android:textAllCaps="true"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtConnection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_margin="10dp"
+                android:textAllCaps="true"
+                android:text="Network Connection :"
+                style="@style/ButtonTextMainMenu"
+                android:textSize="10dp"
+                android:textColor="@color/black" />
+
+            <TextView
+
+                android:id="@+id/txtNetStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:textSize="12dp"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtIpv4Label"
+                android:layout_width="match_parent"
+                style="@style/ButtonTextMainMenu"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_margin="10dp"
+                android:textAllCaps="true"
+                android:text="Ipv4 Address :"
+                android:textSize="10dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtIpv4Addr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:textSize="12dp"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtIpv6Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/ButtonTextMainMenu"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="IPv6 Address :"
+                android:textSize="10dp"
+                android:textAllCaps="true"
+                android:gravity="right"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtIpv6Addr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:textSize="12dp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/wlan0Label"
+                style="@style/ButtonTextMainMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_margin="10dp"
+                android:textAllCaps="true"
+                android:text="wlan0 Mac Address:"
+                android:textSize="10dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtwlan0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:textSize="12dp"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txteth0Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_margin="10dp"
+                android:textAllCaps="true"
+                style="@style/ButtonTextMainMenu"
+                android:text="eth0 Mac Address :"
+                android:textSize="10dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/eth0Mac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+
+                android:textSize="12dp"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txteth1Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_margin="10dp"
+                android:text="eth1 Mac Address :"
+                style="@style/ButtonTextMainMenu"
+                android:textAllCaps="true"
+                android:textSize="10dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/eth1Mac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:textSize="12dp"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txteth2Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                style="@style/ButtonTextMainMenu"
+                android:textAllCaps="true"
+                android:layout_margin="10dp"
+                android:text="eth2 Mac Address :"
+                android:textSize="10dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/eth2Mac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:textSize="12dp"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+
+
+
+            <Button
+                android:text="Okay"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16dp"
+                style="@style/ButtonTextMainMenu"
+                android:background="@drawable/button_blue"
+                android:id="@+id/ok_btn"
+                android:textColor="@color/black"
+                android:textAllCaps="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_width="match_parent"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_height="wrap_content"
+                 />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center|top"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:visibility="visible"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/black"/>
+
+    </FrameLayout>
+
+</ScrollView>
+
+
+</LinearLayout>
